@@ -1,0 +1,43 @@
+marker interfaces = interaface without methods
+containers
+1. ArrayList - list - collection - iterable 
+	put duplicates 
+2. LinkedList - list - collection - iterable
+	put duplicates
+3.TreeSet - set - collection - iterable
+	put unique
+4.HashSet - set - collection - iterable
+	put unique
+
+
+ArrayList<datatype> name = new Arraylist<datatype>();
+
+baseadd of array + (size of type*index) = array search
+
+Iterator<ClassName> i = ClassObject.iterator();
+		while(i.hasNext()) {
+			ClassName Object = i.next();
+			System.out.println(Object);
+		}
+
+
+TreeSet needs 
+implement compareTo method from Comparable interface;
+
+public int compareTo(ChemicalElement o) {
+		// TODO Auto-generated method stub
+		return Integer.compare(atomicNumber, o.atomicNumber);
+	}
+
+
+DAO - data Access object
+
+unchecked exp => try catch is not required and throws keyword is not required
+
+Assertion.assertTrue(); during testing, to sopt the program after the error line;
+
+@Test (import the Junit package)
+is used to test section of the code
+select the method name - right click - run as Junit.
+
+comparator / equals- assignment
