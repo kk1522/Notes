@@ -1,0 +1,62 @@
+Comparator - used for sorting arraylist,linkedlist
+
+class HeightComparator implements Comparator<Girl>
+{
+	@Override
+	public int compare(Girl o1, Girl o2) {
+		System.out.println("HeightComparator: "+o1.name+" started comparing height with "+o2.name);
+		return Float.compare(o1.height, o2.height);
+	}
+
+}
+
+compare class is used
+Comparable class is used for treeset with compareTo method
+
+hsqldb.org - https://sourceforge.net/projects/hsqldb/files/
+run this command in lib folder - this starts the database. dont click inside that cmd after the Database is started. Clicking will pause the database
+
+-->java -cp hsqldb.jar org.hsqldb.server.Server --database.0 file:mydb --dbname.0 xdb
+
+xdb is the name of the database
+
+
+open hsql interface: 
+go to lib folder run cmd  - java -jar hsqldb.jar
+
+
+Driver:  org.hsqldb.jdbc.JDBCDriver
+url: jdbc:hsqldb:hsql://localhost/xdb
+
+add class path -> 
+select the project - right click on project - properties - java build path - library tab- class path - add external jars - select the hsqldb jar file in lib folder
+
+
+CREATE TABLE FRIEND(
+	FRIEND_ID INT,
+	FRIEND_NAME VARCHAR(20),
+	FRIEND_TYPE VARCHAR(20)
+)
+
+
+INSERT INTO FRIEND VALUES (101,'JACK','MUTUAL');
+INSERT INTO FRIEND VALUES (102,'JANE','FACEBOOK');
+INSERT INTO FRIEND VALUES (103,'JANET','FAMILY');
+INSERT INTO FRIEND VALUES (104,'JIM','SCHOOL');
+INSERT INTO FRIEND VALUES (105,'JILL','MUTUAL');
+
+
+
+TYPE CASTING
+Cash x = new PettyCash(); // x only can access the overriden methods of Cash in Petty Cash
+Pettycash y = (PettyCash) x; // y can access methods in Cash and Petty Cash
+class PettyCash implements Cash{}
+
+x can't access
+
+
+inset delete update - use prepared statement
+
+	
+
+
